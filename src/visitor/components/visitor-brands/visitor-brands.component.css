@@ -1,0 +1,29 @@
+.brand {
+    padding: 1.25rem;
+}
+.brand div {
+    display: grid;
+    /* centrar horizontalmente los elementos con grid */
+    place-items: center;
+    align-items: center;
+    row-gap: 1.25rem;
+}
+
+.brand div img{
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Cuando la pantalla es mayor a 900px */
+@media only screen and (min-width : 901px) {
+    .brand div {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+    
+/* Cuando la pantalla es menor a 900px  (tablets y teléfonos inteligentes)*/
+@media only screen and (max-width : 900px) {
+    .brand div {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
