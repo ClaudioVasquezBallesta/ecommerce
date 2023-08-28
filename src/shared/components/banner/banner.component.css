@@ -14,6 +14,10 @@ img {
     border-radius: 10px;
 }
 
+.subscribe-message {
+    margin-top: 4rem;
+}
+
 .subscribe-message h2 {
     color: #3D4C5E;
     font-weight: 600;
@@ -24,6 +28,10 @@ img {
     color: #3D4C5E;
     font-size: 1rem;
     font-weight: 500;
+}
+
+.subscribe-input {
+    margin-bottom: 3rem;
 }
 
 .group {
