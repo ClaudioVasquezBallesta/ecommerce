@@ -1,7 +1,10 @@
-/* Cuando la pantalla es mayor a 900px */
+
 .banner img {
     padding: 1.25rem;
+    border-radius: 1.8rem;
 }
+
+/* Cuando la pantalla es mayor a 900px */
 @media only screen and (min-width : 901px) {
     .banner img{
         width: 100%;

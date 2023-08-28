@@ -1,0 +1,70 @@
+p, h2, h5{
+    margin: 0;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.message {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+.message p {
+    border-left: 2px solid black;
+    padding: 1rem 0 1rem 1rem;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+}
+.card h5 {
+    font-weight: bold;
+    font-size: 13px;
+    color: #1D242D; 
+}
+.card p {
+    font-weight: normal;
+    font-size: 10px;
+    color: #1D242D; 
+}
+mat-icon {
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #F2F4F7;
+    padding: 0.5rem;
+}
+
+/* Cuando la pantalla es mayor a 900px */
+@media only screen and (min-width : 901px) {
+
+}
+    
+/* Cuando la pantalla es menor a 900px  (tablets y teléfonos inteligentes)*/
+@media only screen and (max-width : 900px) {
+    .card {
+        grid-template-columns: repeat(2, 1fr);
+            /* gap: 2.5rem; */
+    }
+    .message {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    .message p {
+        border-left: 0;
+        padding: 0;
+
+    }
+}

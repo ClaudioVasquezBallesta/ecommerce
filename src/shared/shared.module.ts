@@ -4,6 +4,7 @@ import { BannerComponent } from './components/banner/banner.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { MaterialModule } from './modules/material.module';
 
 const components = [
   BannerComponent,
@@ -15,7 +16,8 @@ const components = [
 @NgModule({
   declarations: [...components],
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialModule
   ],
   exports: [...components]
 })

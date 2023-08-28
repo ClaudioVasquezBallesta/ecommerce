@@ -9,6 +9,7 @@ import { VisitorCurratedProductsComponent } from './components/visitor-currated-
 import { SharedModule } from 'src/shared/shared.module';
 import { VisitorLandingComponent } from './pages/visitor-landing/visitor-landing.component';
 import { VisitorBannerComponent } from './components/visitor-banner/visitor-banner.component';
+import { MaterialModule } from 'src/shared/modules/material.module';
 
 
 const components = [
@@ -21,6 +22,6 @@ const components = [
 
 @NgModule({
   declarations: [...components, VisitorLandingComponent],
-  imports: [CommonModule, VisitorRoutingModule, SharedModule],
+  imports: [CommonModule, VisitorRoutingModule, SharedModule, MaterialModule],
 })
 export class VisitorModule {}
